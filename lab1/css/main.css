@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:24px;
+}
+#head{
+	font-size:48px;
+	font-weight:bold;
+}
+#list{
+	font-size:24px;
+
+}
+empasis-large{
+	font-size:36px;
+	font-weight:bold;
+}
+#empasis-normal{
+	font-size:24px;
+	font-weight:bold;
+}
