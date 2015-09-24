@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+		font-family:Verdana, Tahoma;
+		font-size:24px;
+		color:#e4e4e4;
+		background-color: #800000 ;
+		background-image:url("pics/cse.png");
+		background-repeat:no-repeat;
+		background-position:top right;
+}
+
+a{
+	color:#FF8484;
+	
+}
+a:link{
+	text-decoration:none;
+}
+a:hover{
+	 color:#D678FF;
+	 text-decoration:underline;
+}
+
+dl{
+	font-weight:bold;
+}
+
+blockquote{
+	font-size:80%;
+}
+h1{
+	font-size:3em;
+}
+span{
+	font-weight:bold;
+	font-size:150%;
+}
+
+
+strong{
+	color:#3BE691;
+}
+
+li{
+	text-align:left;
+}
+
+h2{
+	text-shadow:2px 2px gray;
+	 color:#9197FF
+}
+
+h1{
+	color:#9197FF
+}
+table, td, tr, th{
+	border:dashed;
+	border-collapse:collapse;
+}
+ol{
+	list-style-type:upper-roman;
+}
+
+
+tr:nth-child(2){
+	background-color:blue;
+}
+
+
+
