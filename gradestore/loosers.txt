@@ -1,0 +1,37 @@
+ewrwdsd;werwer;4234567890123456;visa
+ewrwdsd sdasd;werwer;4234567890123456;visa
+dddwdsd sdasd;werwer;4234567890123456;visa
+dddwdsd-sdasd;werwer;4234567890123456;visa
+-dddwdsd sdasd;werwer;4234567890123456;visa
+d----ddwdsd sdasd;werwer;4234567890123456;visa
+d-dd wdsd sdasd;werwer;4234567890123456;visa
+d-dd wdsd sdasd-;werwer;4234567890123456;visa
+ddd- ddd;werwer;4234567890123456;visa
+dabc;werwer;4234567890123456;visa
+dabcd;werwer;4234567890123456;visa
+dabcdd;werwer;4234567890123456;visa
+dabcddd;werwer;4234567890123456;visa
+dabcddddd;werwer;4234567890123456;visa
+werwer dasd;eqwe;4234567890123456;visa
+werwer -dasd;eqwe;4234567890123456;visa
+werwer- dasd;eqwe;4234567890123456;visa
+werwer- dasd;eqwe;4234567890123456;visa
+werwer- dasd;eqwe;4234567890123456;visa
+werwer -dasd;eqwe;4234567890123456;visa
+werwer- dasd;eqwe;4234567890123456;visa
+werwer -dasd;eqwe;4234567890123456;visa
+werwer dasd;eqwe;4234567890123456;visa
+werwer- dasd;eqwe;4234567890123456;visa
+werwer- dasd;eqwe;4234567890123456;visa
+werwer dasd;eqwe;4234567890123456;visa
+werwer -dasd;eqwe;4234567890123456;visa
+werwer dasd;eqwe;4234567890123456;visa
+werwer dasd;eqwe;4234567890123456;visa
+werwer -dasd;eqwe;4234567890123456;visa
+werwer dasd;eqwe;4234567890123456;visa
+werwer dasd;eqwe;4234567890123456;visa
+werwer dasd;eqwe;4234567890123456;visa
+werwer dasd;eqwe;4234567890123456;visa
+werwer dasd;eqwe;4234567890123456;visa
+werwer -dasd;eqwe;4234567890123456;visa
+werwer dasd;eqwe;4234567890123456;visa
