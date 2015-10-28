@@ -1,0 +1,85 @@
+create database college;
+
+create table student(
+student_id int not null primary key,
+name varchar(10) not null,
+year smallint not null default '1',
+dept_no int not null,
+major varchar(20)
+);
+
+create table department(
+dept_no int not null primary key auto_increment,
+dept_name varchar(20) not null,
+office varchar(20) not null,
+office_tel varchar(13)
+);
+
+ALTER TABLE 'department' ADD UNIQUE INDEX IndexName('dept_name');
+
+
+ALTER TABLE student CHANGE major major varchar(40);
+
+ALTER TABLE student ADD gender varchar(10);
+
+
+ALTER TABLE department CHANGE dept_name detp_name varchar(40) not null;
+
+
+ALTER TABLE department CHANGE office office varchar(30);
+
+ALTER TABLE `student` DROP `gender`;
+
+INSERT INTO `college`.`student` (`student_id`, `name`, `year`, `dept_no`, `major`) VALUES ('20070002', 'Jmes Bond', '3', '4', 'Business Administration');
+
+INSERT INTO `college`.`student` (`student_id`, `name`, `year`, `dept_no`, `major`) VALUES  (20060001, 'Queenie', 4, 4, 'Business Administration');
+
+
+INSERT INTO `college`.`student` (`student_id`, `name`, `year`, `dept_no`, `major`) VALUES (20030001, 'Reonardo', 4, 2, 'Electronic Engineering'),(20040003, 'Julia', 3, 2, 'Electronic Engineering');
+
+INSERT INTO `college`.`student` (`student_id`, `name`, `year`, `dept_no`, `major`) VALUES (20060002, 'Roosevelt', 3, 1, 'Computer Science'),(20100002, 'Fearne', 3, 4, 'Business Administration'),(20110001, 'Chloe', 2, 1, 'Computer Science') ,(20080003, 'Amy', 4, 3, 'Law'),(20040002, 'Selina', 4, 5, 'English Literature'),(20070001, 'Ellen', 4, 4, 'Business Administration') ,(20100001, 'Kathy', 3, 4, 'Business Administration'),(20110002, 'Lucy', 2, 2, 'Electronic Engineering'),(20030002, 'Michelle', 5, 1, 'Computer Science'),(20070003, 'April', 4, 3, 'Law') ,(20070005, 'Alicia', 2, 5, 'English Literature'),(20100003, 'Yullia', 3, 1, 'Computer Science'),(20070007, 'Ashlee', 2, 4, 'Business Administration');
+
+
+INSERT INTO `college`.`department`(`detp_name`,`office`,`office_tel`) VALUES ('Computer Science', 'Engineering building', '02-3290-0123'),('Electronic Engineering', 'Engineering building', '02-3290-2345'), ('Law', 'Law building', '02-3290-7896') , ( 'Business Administration', 'Administration building', '02-3290-1112'),('English Literature', 'Literature building', '02-3290-4412');
+
+ UPDATE `college`.`department` SET detp_name='Electronic and Electrical Engineering' WHERE detp_name='Electronic Engineering' ;
+
+INSERT INTO `college`.`department` (`dept_no`, `detp_name`, `office`, `office_tel`) VALUES (NULL, 'Education', 'Education Building', '02-3290-2347');
+
+UPDATE `college`.`student` SET `major` = 'Education' WHERE `student`.`student_id` = 20110001;
+
+UPDATE `college`.`student` SET `major` = '' WHERE `student`.`name` = 'Michelle';
+
+DELETE FROM `college`.`student`
+WHERE `student`.`name`='Fearne';
+
+SELECT * FROM `student` WHERE `major`='Business Administration' AND `student_id` LIKE '%2007%' ORDER BY `student_id` LIMIT 0,2;
+
+ 
+
+SELECT * FROM `student` WHERE major='Computer Science' ;
+
+SELECT `student_id`, `year`, `major` FROM `student` WHERE 1 ;
+
+SELECT * FROM `student` WHERE `year`=3 ;
+
+SELECT * FROM `student` WHERE `year`=1 or `year`=2 ;
+
+SELECT * FROM student st JOIN department de WHERE de.dept_no=st.dept_no AND de.detp_name='Business Administration';
+
+SELECT * FROM `student` WHERE `student_id` LIKE '%2007%';
+
+SELECT * FROM `student` WHERE 1 ORDER BY `student_id` ;
+
+SELECT * FROM student,AVG(year) av WHERE 1 GROUP BY major HAVING av>3;
+
+
+
+
+
+
+
+
+
+
+
