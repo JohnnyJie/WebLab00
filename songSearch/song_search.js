@@ -21,7 +21,12 @@ document.observe("dom:loaded", function() {
 });
 
 function showSongs_XML(ajax) {
-	$("songs").innerHTML="";
+	var txts = document.getElementById('songs').getElementsByTagName("li");
+	for(var i=txts.length-1;i>=0;i--)
+	{
+		txts[i].remove();
+	} 
+	//$("songs").innerHTML="";
 	var songs = ajax.responseXML.getElementsByTagName("song");
 	for (var i = 0; i < songs.length; i++) {
 	   
@@ -38,7 +43,11 @@ function showSongs_XML(ajax) {
 }
 
 function showSongs_JSON(ajax) {
-	$("songs").innerHTML="";
+	var txts = document.getElementById('songs').getElementsByTagName("li");
+	for(var i=txts.length-1;i>=0;i--)
+	{
+		txts[i].remove();
+	} 
 	var data = JSON.parse(ajax.responseText);
 	for (var i = 0; i < data.songs.length; i++) {
         var li = document.createElement("li");
